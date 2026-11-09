@@ -1,0 +1,134 @@
+index.html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Crysan Araújo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Recurso Novo: Animações de Hover e Transição Suave */
+        .hover-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        header {
+            background: linear-gradient(135deg, #0d6efd, #0dcaf0);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu de Navegação Funcional -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Crysan Araújo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#perfil">Perfil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção de Perfil -->
+    <header id="perfil" class="py-5 text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Olá, eu sou o Crysan!</h1>
+            <p class="lead col-lg-8 mx-auto">Estudante de Desenvolvimento de Sistemas na ETEC, apaixonado por tecnologia, programação em Python e criação de soluções web modernas.</p>
+        </div>
+    </header>
+
+    <!-- Recurso Novo: Seção de Habilidades -->
+    <section id="habilidades" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">Minhas Habilidades</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-3">
+                    <div class="p-4 bg-white rounded shadow-sm hover-card">
+                        <h4>HTML5 & CSS3</h4>
+                        <p class="text-muted">Criação de estruturas semânticas e estilização responsiva com Bootstrap.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="p-4 bg-white rounded shadow-sm hover-card">
+                        <h4>Python</h4>
+                        <p class="text-muted">Desenvolvimento de lógica, automações e manipulação de dados.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="p-4 bg-white rounded shadow-sm hover-card">
+                        <h4>Controle de Versão</h4>
+                        <p class="text-muted">Publicação de projetos e gerenciamento de código via Git e GitHub.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Projetos -->
+    <section id="projetos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">Meus Projetos</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 hover-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Painel de Dados Python</h5>
+                            <p class="card-text">Aplicação voltada à organização de dados e listas utilizando estruturas em Python.</p>
+                            <span class="badge bg-secondary">Python</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 hover-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Portfólio Pessoal</h5>
+                            <p class="card-text">Site institucional desenvolvido com Bootstrap e animações personalizadas de hover.</p>
+                            <span class="badge bg-primary">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 hover-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Estudo Histórico Web</h5>
+                            <p class="card-text">Página interativa com conteúdos acadêmicos e formatação avançada de layout.</p>
+                            <span class="badge bg-success">HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h2 class="mb-3 fw-bold">Contato</h2>
+            <p class="mb-4">Quer entrar em contato ou conhecer mais do meu código? Acesse minhas redes abaixo:</p>
+            <a href="https://github.com" target="_blank" class="btn btn-outline-light m-2">GitHub</a>
+            <a href="https://linkedin.com" target="_blank" class="btn btn-outline-light m-2">LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="text-center py-3 bg-black text-white-50">
+        <p class="mb-0">&copy; 2026 Crysan Araújo. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
